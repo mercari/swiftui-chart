@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "7C60ABA9-5C92-4774-90CC-FF681D51F465",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "ChartCoreTests",
+        "name" : "ChartCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "LineChartTests",
+        "name" : "LineChartTests"
+      }
+    }
+  ],
+  "version" : 1
+}
