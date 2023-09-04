@@ -2,6 +2,10 @@
 
 This is a library to build charts in SwiftUI. This enables you to build charts with SwiftUI primitive `View` or `Shape` components, and simple declarative APIs.
 
+![Demo 1](https://github.com/mercari/swiftui-chart/assets/19662625/8f7fa450-1994-44f8-83d2-bf8246fb75cd)
+![Demo 2](https://github.com/mercari/swiftui-chart/assets/19662625/7d910014-82d2-4dbe-878e-3708058662db)
+![Demo 3](https://github.com/mercari/swiftui-chart/assets/19662625/59af5b85-8033-4def-8d20-ad6ea8aad70b)
+
 ## Motivation
 There are many libraries to build charts in SwiftUI, but most of them are based on UIKit components. This library is based on SwiftUI primitive `View` or `Shape` components.
 
