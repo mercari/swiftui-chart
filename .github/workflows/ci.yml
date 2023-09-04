@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        run: make build-library | xcpretty
+        run: set -o pipefail && make build-library | xcpretty
   
   test:
     name: Test
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
-        run: make test-library | xcpretty
+        run: set -o pipefail && make test-library | xcpretty
 
   build-example:
     name: Build Example app
@@ -32,4 +32,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        run: make build-example | xcpretty
+        run: set -o pipefail && make build-example | xcpretty
