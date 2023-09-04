@@ -1,4 +1,4 @@
-# SwiftUI Chart
+# SwiftUI Chart [![CI](https://github.com/mercari/swiftui-chart/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mercari/swiftui-chart/actions/workflows/ci.yml)
 
 This is a library to build charts in SwiftUI. This enables you to build charts with SwiftUI primitive `View` or `Shape` components, and simple declarative APIs.
 
