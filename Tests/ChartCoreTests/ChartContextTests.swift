@@ -24,7 +24,7 @@ final class ChartContextTests: XCTestCase {
         XCTAssertEqual(
             makeContext([
                 OptionalEntry(x: 0, y: nil),
-                OptionalEntry(x: 1, y: 100),
+                OptionalEntry(x: 1, y: nil),
                 OptionalEntry(x: 2, y: nil),
             ])
             .transformEntries(translate),
