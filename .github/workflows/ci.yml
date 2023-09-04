@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_14.3.1.app
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        run: set -o pipefail && make build-library | xcpretty
+  
+  test:
+    name: Test
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v3
+      - name: Test
+        run: set -o pipefail && make test-library | xcpretty
+
+  build-example:
+    name: Build Example app
+    runs-on: macos-13
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        run: set -o pipefail && make build-example | xcpretty
