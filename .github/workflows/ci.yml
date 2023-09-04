@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        run: make build-library
+        run: make build-library | xcpretty
   
   test:
     name: Test
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
-        run: make test-library
+        run: make test-library | xcpretty
 
   build-example:
     name: Build Example app
@@ -32,4 +32,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build
-        run: make build-example
+        run: make build-example | xcpretty
